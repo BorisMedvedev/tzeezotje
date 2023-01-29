@@ -1,0 +1,37 @@
+{
+  "name": "kursovoy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Medvedev Boris",
+  "license": "ISC",
+  "devDependencies": {
+    "accordion-js": "^3.3.0",
+    "browser-sync": "^2.27.7",
+    "choices.js": "^9.1.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-image": "^6.2.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgo": "^2.2.1",
+    "gulp-tinypng-compress": "^1.2.5",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.6.0",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.43.4",
+    "simplebar": "^5.3.6",
+    "swiper": "^8.1.4",
+    "tippy.js": "^6.3.7"
+  },
+  "dependencies": {
+    "trim-newlines": "^4.0.2"
+  }
+}

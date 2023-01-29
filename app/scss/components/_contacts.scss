@@ -1,0 +1,155 @@
+.contacts {
+  padding-top: 58px;
+  color: black;
+  @include r(768) {
+    padding-top: 50px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__info {
+    max-width: 410px;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+    @include r(440) {
+      font-size: 24px;
+    }
+  }
+  &__item {
+    margin-bottom: 52px;
+    padding-left: 80px;
+  }
+
+  &__label {
+    display: block;
+    color: #2e2e2e;
+  }
+
+  &__value {
+    position: relative;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 37px;
+    color: #2e2e2e;
+    transition: color 0.3s;
+    &:hover {
+      color: #d3b47f;
+    }
+    @include r(1024) {
+      font-size: 18px;
+    }
+    @include r(440) {
+      font-size: 16px;
+    }
+  }
+
+  &__value::after {
+    content: "";
+    position: absolute;
+    top: -26px;
+    left: -83px;
+    display: block;
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #d3b47f;
+    border-radius: 90%;
+    @include r(440) {
+      width: 50px;
+      height: 50px;
+      left: -70px;
+    }
+  }
+  &__value--phone::after {
+    background-image: url("../../images/icons/phone.svg");
+  }
+  &__value--email::after {
+    background-image: url("../../images/icons/email.svg");
+  }
+  &__value--hours::after {
+    background-image: url("../../images/icons/hours.svg");
+  }
+  &__value--map::after {
+    background-image: url("../../images/icons/map.svg");
+  }
+}
+
+.contacts-form {
+  max-width: 670px;
+  margin-bottom: 50px;
+  &__title {
+    margin-bottom: 36px;
+    color: black;
+    @include r(440) {
+      font-size: 16px;
+    }
+  }
+}
+
+.form-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 670px;
+  width: 100%;
+  @include r(680) {
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__btn {
+    display: block;
+    padding: 38px 104px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    @include r(440) {
+      padding: 25px 80px;
+    }
+  }
+  span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  label {
+    max-width: 320px;
+    width: 100%;
+  }
+  input {
+    padding: 32px 16px;
+    margin-bottom: 27px;
+    max-width: 320px;
+    width: 100%;
+
+    border: 1px solid #cccccc;
+    &::placeholder {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #808080;
+    }
+  }
+
+  textarea {
+    padding: 28px 16px;
+    margin-bottom: 20px;
+    width: 670px;
+    height: 125px;
+    resize: none;
+    border: 1px solid #cccccc;
+    @include r(768) {
+      max-width: 670px;
+    }
+    @include r(680) {
+      max-width: 320px;
+    }
+  }
+}

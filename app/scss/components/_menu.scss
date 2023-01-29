@@ -1,0 +1,136 @@
+.menu {
+  padding: 60px 0 180px;
+
+  &__container {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    @include r(1200) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__list {
+    max-width: 470px;
+    margin-right: 129px;
+    @include r(1200) {
+      margin-bottom: 80px;
+    }
+    @include r(568) {
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    padding-bottom: 19px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #e7e7e7;
+    @include r(440) {
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+  }
+
+  &__day {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+    @include r(568) {
+      font-size: 16px;
+    }
+  }
+
+  &__row {
+    white-space: nowrap;
+    @include r(440) {
+      white-space: pre-wrap;
+    }
+  }
+
+  &__row span {
+    transition: color 0.3s;
+  }
+
+  &__row:hover span {
+    color: #d3b47f;
+  }
+
+  &__text--left {
+    display: inline-flex;
+
+    &::after {
+      content: "...";
+      margin-left: 10px;
+      font-size: 41px;
+      line-height: 0;
+      letter-spacing: 0.2em;
+      color: #d3b47f;
+      display: inline-block;
+      transform: translateY(5px);
+      @include r(440) {
+        display: none;
+      }
+    }
+  }
+
+  &__images {
+    position: relative;
+    max-width: 475px;
+    width: 100%;
+    height: 502px;
+    border: 2px solid #d3b47f;
+    @include r(768) {
+      min-height: 400px;
+    }
+    @include r(568) {
+      // height: 300px;
+      border: none;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    @include r(768) {
+      width: 250px;
+    }
+    @include r(568) {
+      max-width: 568px;
+      width: 100%;
+      position: initial;
+      max-height: 300px;
+    }
+
+    &--left {
+      top: 103px;
+      left: -97px;
+      @include r(768) {
+        top: 86px;
+        left: -21px;
+      }
+      @include r(568) {
+        margin-bottom: 25px;
+      }
+    }
+
+    &--right {
+      top: -50px;
+      right: -100px;
+      @include r(768) {
+        top: -17px;
+        right: -20px;
+      }
+    }
+  }
+}

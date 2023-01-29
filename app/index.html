@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tzeezotje</title>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=76d10f3a-6594-4483-8620-1091358b4d14"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+  <header id="header" class="header">
+  <div class="container header__container">
+    <a class="logo" href="#">
+      <img class="logo__img" loading="lazy" src="../../images/logo.png" alt="логотип Tzeezotje" width="269">
+    </a>
+    <nav class="nav" title="Главное меню">
+      <ul class="nav__list list-reset">
+        <li class="nav__item">
+          <a href="#map" class="nav__link">
+            À la carte</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            Wijnkaart</a>
+        </li>
+        <li class="nav__item">
+          <a href="#menu" class="nav__link">
+            Lunchmenu</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">
+            Contact</a>
+        </li>
+      </ul>
+
+    </nav>
+
+    <div>
+
+      <a class="header__phone" href="tel:+3292825725">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_d_0_52)">
+            <path
+              d="M24.97 17.33C24.97 17.69 24.89 18.06 24.72 18.42C24.55 18.78 24.33 19.12 24.04 19.44C23.55 19.98 23.01 20.37 22.4 20.62C21.8 20.87 21.15 21 20.45 21C19.43 21 18.34 20.76 17.19 20.27C16.04 19.78 14.89 19.12 13.75 18.29C12.6 17.45 11.51 16.52 10.47 15.49C9.44 14.45 8.51 13.36 7.68 12.22C6.86 11.08 6.2 9.94 5.72 8.81C5.24 7.67 5 6.58 5 5.54C5 4.86 5.12 4.21 5.36 3.61C5.6 3 5.98 2.44 6.51 1.94C7.15 1.31 7.85 1 8.59 1C8.87 1 9.15 1.06 9.4 1.18C9.66 1.3 9.89 1.48 10.07 1.74L12.39 5.01C12.57 5.26 12.7 5.49 12.79 5.71C12.88 5.92 12.93 6.13 12.93 6.32C12.93 6.56 12.86 6.8 12.72 7.03C12.59 7.26 12.4 7.5 12.16 7.74L11.4 8.53C11.29 8.64 11.24 8.77 11.24 8.93C11.24 9.01 11.25 9.08 11.27 9.16C11.3 9.24 11.33 9.3 11.35 9.36C11.53 9.69 11.84 10.12 12.28 10.64C12.73 11.16 13.21 11.69 13.73 12.22C14.27 12.75 14.79 13.24 15.32 13.69C15.84 14.13 16.27 14.43 16.61 14.61C16.66 14.63 16.72 14.66 16.79 14.69C16.87 14.72 16.95 14.73 17.04 14.73C17.21 14.73 17.34 14.67 17.45 14.56L18.21 13.81C18.46 13.56 18.7 13.37 18.93 13.25C19.16 13.11 19.39 13.04 19.64 13.04C19.83 13.04 20.03 13.08 20.25 13.17C20.47 13.26 20.7 13.39 20.95 13.56L24.26 15.91C24.52 16.09 24.7 16.3 24.81 16.55C24.91 16.8 24.97 17.05 24.97 17.33Z"
+              stroke="#D3B47F" stroke-width="1.5" stroke-miterlimit="10" />
+            <path d="M21.5 8C21.5 7.4 21.03 6.48 20.33 5.73C19.69 5.04 18.84 4.5 18 4.5" stroke="#D3B47F"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M25 8C25 4.13 21.87 1 18 1" stroke="#D3B47F" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </g>
+          <defs>
+            <filter id="filter0_d_0_52" x="0.25" y="0.25" width="29.5" height="29.5" filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha" />
+              <feOffset dy="4" />
+              <feGaussianBlur stdDeviation="2" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_52" />
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_52" result="shape" />
+            </filter>
+          </defs>
+        </svg>
+        <span class="header__phone-span"> +32 9 282 57 25</span></a>
+    </div>
+
+    <div class="menu-bar">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+  </div>
+</header>
+
+  <main>
+    <section class="hero">
+  <h1 class="visually-hidden">Скрытый заголовок h1</h1>
+  <div class="container">
+    <div class="hero__subtitle">open everyday 6am - 9pm</div>
+    <h2 class="hero__title">
+      A bad day with lunch is better than a good day without it.
+    </h2>
+
+    <div class="hero__box-link">
+      <button class="hero__btn btn-reset btn" data-path="form-popup">Reserve a table</button>
+
+      <ul class="hero__social list-reset social">
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#" aria-label="сциальная сеть"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--ld" href="#" aria-label="сциальная сеть"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--tw" href="#" aria-label="сциальная сеть"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--yt" href="#" aria-label="сциальная сеть"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <section id="menu" class="menu">
+  <h2 class="visually-hidden">Скрытый заголовок h2</h2>
+  <div class="container menu__container">
+    <div class="menu__list">
+      <div class="menu__item">
+        <span class="menu__day">Woensdag 12/01</span>
+        <a class="menu__row" href="#">
+          <span class="menu__text menu__text--left">Salade met Serrano</span>
+          <span class="menu__text menu__text--right">Steak Tartaar</span>
+        </a>
+      </div>
+      <div class="menu__item">
+        <span class="menu__day">Donderdag 13/01</span>
+        <a class="menu__row" href="#">
+          <span class="menu__text menu__text--left">Toast Roquefort</span>
+          <span class="menu__text menu__text--right">Penne met Kip en Prei</span>
+        </a>
+      </div>
+      <div class="menu__item">
+        <span class="menu__day">Vrijdag 14/01</span>
+        <a class="menu__row" href="#">
+          <span class="menu__text menu__text--left">Verrassing van de Chef</span>
+          <span class="menu__text menu__text--right">Penne met Kip en Prei</span>
+        </a>
+      </div>
+      <div class="menu__item">
+        <span class="menu__day">Vrijdag 15/01</span>
+        <a class="menu__row" href="#">
+          <span class="menu__text menu__text--left">Verrassing van de Chef</span>
+          <span class="menu__text menu__text--right">Penne met Kip en Prei</span>
+        </a>
+      </div>
+      <div class="menu__item">
+        <span class="menu__day">Vrijdag 16/01</span>
+        <a class="menu__row" href="#">
+          <span class="menu__text menu__text--left">Verrassing van de Chef</span>
+          <span class="menu__text menu__text--right">Penne met Kip en Prei</span>
+        </a>
+      </div>
+    </div>
+    <div class="menu__images">
+      <img class="menu__img menu__img--left" src="../../images/foto-menu-2.jpg" alt="foto-menu-1" width="323">
+      <img class="menu__img menu__img--right" src="../../images/foto-menu-1.jpg" alt="foto-menu-1" width="323">
+    </div>
+  </div>
+</section>
+
+    <section class="reviews">
+  <h2 class="visually-hidden">Скрытый заголовок h2</h2>
+  <div class="container reviews__container">
+
+    <div class="swiper reviews-swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="reviews-swiper__inner">
+            <span class="reviews-swiper__quotation"></span>
+            <h3 class="reviews-swiper__title">Goede service, lekker eten, toffe ambiance</h3>
+            <p class="reviews-swiper__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+              eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren.</p>
+            <span class="reviews-swiper__name">alain heyndrickx</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-swiper__inner">
+            <span class="reviews-swiper__quotation"></span>
+            <h3 class="reviews-swiper__title">Goede service, lekker eten, toffe ambiance</h3>
+            <p class="reviews-swiper__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+              eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren.</p>
+            <span class="reviews-swiper__name">alain heyndrickx</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-swiper__inner">
+            <span class="reviews-swiper__quotation"></span>
+            <h3 class="reviews-swiper__title">Goede service, lekker eten, toffe ambiance</h3>
+            <p class="reviews-swiper__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+              eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren.</p>
+            <span class="reviews-swiper__name">alain heyndrickx</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-swiper__inner">
+            <span class="reviews-swiper__quotation"></span>
+            <h3 class="reviews-swiper__title">Goede service, lekker eten, toffe ambiance</h3>
+            <p class="reviews-swiper__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+              eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren.</p>
+            <span class="reviews-swiper__name">alain heyndrickx</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <button class="reviews-swiper__next swiper-btn btn-reset"></button>
+    <button class="reviews-swiper__prev swiper-btn btn-reset"></button>
+    <div class="swiper-pagination"></div>
+
+  </div>
+</section>
+
+    <section class="about">
+  <div class="container about__container">
+
+    <div class="about__item-1">
+      <h3 class="about__title">lekker eten</h3>
+      <p class="about__text">Eten gaat niet over indruk maken op mensen. Het gaat erom dat ze zich op hun gemak voelen.
+        Dat is onze
+        filosofie, goed eten in een goede sfeer.</p>
+    </div>
+
+    <div class="about__item-2">
+      <img src="../../images/about-1.jpg" alt="">
+    </div>
+
+    <div class="about__item-3">
+      <img src="../../images/about-2.jpg" alt="">
+    </div>
+
+    <div class="about__item-4">
+      <h3 class="about__title">toffe ambiance</h3>
+      <p class="about__text">Het creëren van de juiste sfeer is zeer belangrijk voor ons. We nemen onze tijd om te
+        zorgen dat alle elementen bijdragen aan de juiste setting.</p>
+    </div>
+
+
+
+
+    <div class="about__item-5">
+      <h3 class="about__title">lekkere cocktails</h3>
+      <p class="about__text">Eten gaat niet over indruk maken op mensen. Het gaat erom dat ze zich op hun gemak voelen.
+        Dat is onze
+        filosofie, goed eten in een goede sfeer.</p>
+    </div>
+
+    <div class="about__item-6">
+      <img src="../../images/about-3.jpg" alt="">
+    </div>
+
+  </div>
+</section>
+
+    <section class="sfeerfoto">
+  <div class="sfeerfoto__bg"></div>
+  <div class="container sfeerfoto__container">
+    <h2 class="sfeerfoto__title title">Sfeerfoto's</h2>
+    <p class="sfeerfoto__text">De beste manier om de sfeer te ervaren is eens langskomen.
+      In tussentijd hebben we hier alvast wat foto’s voor je klaar.</p>
+    <div class="btn-box">
+      <button class="sfeerfoto-swiper-next swiper-btn btn-reset"></button>
+      <button class="sfeerfoto-swiper-prev swiper-btn btn-reset"></button>
+    </div>
+  </div>
+  <div class="swiper sfeerfoto-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="../../images/zeezotje-1.jpg" alt="" width="970" height="646">
+      </div>
+      <div class="swiper-slide">
+        <img src="../../images/zeezotje-2.jpg" alt="" width="970" height="646">
+      </div>
+      <div class="swiper-slide">
+        <img src="../../images/zeezotje-3.jpg" alt="" width="970" height="646">
+      </div>
+      <div class="swiper-slide">
+        <img src="../../images/zeezotje-1.jpg" alt="" width="970" height="646">
+      </div>
+      <div class="swiper-slide">
+        <img src="../../images/zeezotje-2.jpg" alt="" width="970" height="646">
+      </div>
+      <div class="swiper-slide">
+        <img src="../../images/zeezotje-2.jpg" alt="" width="970" height="646">
+      </div>
+      <div class="swiper-slide">
+        <img src="../../images/zeezotje-2.jpg" alt="" width="970" height="646">
+      </div>
+
+    </div>
+    <div class="pagination"></div>
+  </div>
+
+</section>
+
+    <section id="contact" class="contacts">
+  <div class="container contacts__container">
+    <div class="contacts__info">
+      <h2 class="contacts__title title">Contacts</h2>
+      <ul class="contacts__list list-reset">
+        <li class="contacts__item">
+          <span class="contacts__label">Phone Number</span>
+          <a class="contacts__value contacts__value--phone" href="tel:+3292825725">+32 9 282 57 25</a>
+
+        </li>
+        <li class="contacts__item">
+          <span class="contacts__label">Email</span>
+          <a class="contacts__value contacts__value--email" href="mailto:info@email.com">info@email.com</a>
+
+        </li>
+        <li class="contacts__item">
+          <span class="contacts__label">Opening Hours</span>
+          <a class="contacts__value contacts__value--hours" href="#">Everyday from 6 AM - 9 PM</a>
+
+        </li>
+        <li class="contacts__item">
+          <span class="contacts__label">Map Street</span>
+          <a class="contacts__value contacts__value--map" href="#">Jl. Raya Surabaya 2787</a>
+
+        </li>
+      </ul>
+    </div>
+
+    <div class="contacts-form">
+      <p class="contacts-form__title title">have any questions?</p>
+      <form method="POST" id="contactForm" class="form-contact" action="mail.php">
+        <div class="visually-hidden" id="errorsHolder"></div>
+        <div hidden id="success" class="alert alert-success" role="alert">
+          Сообщение отправлено успешно!
+        </div>
+
+        <div hidden id="error" class="alert alert-danger" role="alert">
+          Что-то пошло не так. Соообщение не было отправлено.
+          Попробуйте еще раз.
+        </div>
+
+        <label for="name">
+          <span>Name</span>
+          <input name="name" id="name" type="text" placeholder="Input your name" required>
+        </label>
+        <label for="email">
+          <span>Email</span>
+          <input name="email" id="email" type="email" placeholder="Input your name" required>
+        </label>
+        <div class="form-contact__inner">
+
+          <label for="message">
+            <span>Speciale Request</span>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Input your special request"
+              required></textarea>
+          </label>
+          <button class="form-contact__btn btn btn-reset" type="submit" name="submit">Send</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+  <div class="container">
+    <div id="map" style="width: 100%; height: 547px"></div>
+
+  </div>
+</section>
+
+  </main>
+  <footer class="footer">
+  <div class="container footer__container">
+    <a class="logo" href="#">
+      <img class="logo__img footer__logo" loading="lazy" src="../../images/logo-footer.png" alt="логотип Tzeezotje"
+        width="269">
+    </a>
+
+
+    <ul class="list-reset social footer__social-list">
+      <li class="social__item">
+        <a class="footer__social social__link social__link--fb" href="#" aria-label="сциальная сеть"></a>
+      </li>
+      <li class="social__item">
+        <a class="footer__social social__link social__link--ld" href="#" aria-label="сциальная сеть"></a>
+      </li>
+      <li class="social__item">
+        <a class="footer__social social__link social__link--tw" href="#" aria-label="сциальная сеть"></a>
+      </li>
+      <li class="social__item">
+        <a class="footer__social social__link social__link--yt" href="#" aria-label="сциальная сеть"></a>
+      </li>
+    </ul>
+
+  </div>
+  <div class="modals">
+    <div class="modal-overlay">
+      <div class="modal modal--1" data-target="form-popup">
+        <form action="" class="form" id="add-form">
+          <div class="input-box">
+            <input data-required="true" type="text" class="input-field" placeholder="Имя">
+          </div>
+          <div class="input-box">
+            <input data-max-length="6" type="text" class="input-field" placeholder="Фамилия">
+          </div>
+          <div class="input-box">
+            <input data-required="true" data-max-length="6" data-min-length="2" type="text" class="input-field"
+              placeholder="Отчество">
+          </div>
+
+          <button type="submit" class="send-btn">Отправить</button>
+        </form>
+      </div>
+
+
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/script.js "></script>
+  <script src="js/main.min.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+.about {
+  padding: 109px 0 80px;
+  color: black;
+  @include r(1024) {
+    padding: 80px 0 60px;
+  }
+
+  &__container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    display: grid;
+    gap: 30px;
+    @include r(1024) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 38px;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -21px;
+      left: -54px;
+      display: block;
+      width: 108px;
+      height: 1px;
+      background-color: #d3b47f;
+      @include r(560) {
+        left: 0;
+      }
+    }
+    @include r(560) {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    line-height: 32px;
+  }
+
+  &__item-1 {
+    grid-column: 1/6;
+    grid-row: 2/4;
+    @include r(1024) {
+      order: 1;
+    }
+  }
+  &__item-2 {
+    grid-column: 6/13;
+    grid-row: 1/4;
+    @include r(1024) {
+      order: -2;
+    }
+  }
+  &__item-3 {
+    grid-column: 1/8;
+    grid-row: 4/7;
+    @include r(1024) {
+      order: -1;
+    }
+  }
+  &__item-4 {
+    grid-column: 8/13;
+    grid-row: 5/7;
+    @include r(1024) {
+      order: -2;
+    }
+  }
+  &__item-5 {
+    grid-column: 1/6;
+    grid-row: 8/10;
+    @include r(1024) {
+    }
+  }
+  &__item-6 {
+    grid-column: 6/13;
+    grid-row: 7/10;
+    @include r(1024) {
+    }
+  }
+}

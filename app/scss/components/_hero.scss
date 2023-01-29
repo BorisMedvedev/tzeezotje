@@ -1,0 +1,126 @@
+.hero {
+  padding-top: 264px;
+  padding-bottom: 253px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../images/hero_main.jpg");
+  @include r(568) {
+    padding-top: 150px;
+    padding-bottom: 80px;
+  }
+
+  &__box-link {
+    display: flex;
+    justify-content: space-between;
+    @include r(568) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    @include r(440) {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+
+  &__title {
+    max-width: 1145px;
+    margin: 0;
+    margin-bottom: 52px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 88px;
+    color: #ffffff;
+    @include r(768) {
+      font-size: 50px;
+      line-height: 60px;
+    }
+    @include r(568) {
+      font-size: 42px;
+      line-height: 50px;
+    }
+    @include r(440) {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
+
+  &__btn {
+    margin-left: -10px;
+    @include r(1200) {
+      margin-left: 0;
+    }
+    @include r(568) {
+      padding: 20px 40px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.social {
+  padding-top: 14px;
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  &__link {
+    width: 48px;
+    height: 48px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: filter 0.3s;
+    @include r(440) {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &__link--fb {
+    background-image: url("../../images/icons/fb.svg");
+
+    &:hover {
+      filter: invert(16%) sepia(15%) saturate(871%) hue-rotate(356deg)
+        brightness(86%) contrast(91%);
+    }
+  }
+
+  &__link--ld {
+    background-image: url("../../images/icons/ld.svg");
+
+    &:hover {
+      filter: invert(16%) sepia(15%) saturate(871%) hue-rotate(356deg)
+        brightness(86%) contrast(91%);
+    }
+  }
+
+  &__link--tw {
+    background-image: url("../../images/icons/tw.svg");
+
+    &:hover {
+      filter: invert(16%) sepia(15%) saturate(871%) hue-rotate(356deg)
+        brightness(86%) contrast(91%);
+    }
+  }
+
+  &__link--yt {
+    background-image: url("../../images/icons/yt.svg");
+
+    &:hover {
+      filter: invert(16%) sepia(15%) saturate(871%) hue-rotate(356deg)
+        brightness(86%) contrast(91%);
+    }
+  }
+}

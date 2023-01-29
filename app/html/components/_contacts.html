@@ -1,0 +1,67 @@
+<section id="contact" class="contacts">
+  <div class="container contacts__container">
+    <div class="contacts__info">
+      <h2 class="contacts__title title">Contacts</h2>
+      <ul class="contacts__list list-reset">
+        <li class="contacts__item">
+          <span class="contacts__label">Phone Number</span>
+          <a class="contacts__value contacts__value--phone" href="tel:+3292825725">+32 9 282 57 25</a>
+
+        </li>
+        <li class="contacts__item">
+          <span class="contacts__label">Email</span>
+          <a class="contacts__value contacts__value--email" href="mailto:info@email.com">info@email.com</a>
+
+        </li>
+        <li class="contacts__item">
+          <span class="contacts__label">Opening Hours</span>
+          <a class="contacts__value contacts__value--hours" href="#">Everyday from 6 AM - 9 PM</a>
+
+        </li>
+        <li class="contacts__item">
+          <span class="contacts__label">Map Street</span>
+          <a class="contacts__value contacts__value--map" href="#">Jl. Raya Surabaya 2787</a>
+
+        </li>
+      </ul>
+    </div>
+
+    <div class="contacts-form">
+      <p class="contacts-form__title title">have any questions?</p>
+      <form method="POST" id="contactForm" class="form-contact" action="mail.php">
+        <div class="visually-hidden" id="errorsHolder"></div>
+        <div hidden id="success" class="alert alert-success" role="alert">
+          Сообщение отправлено успешно!
+        </div>
+
+        <div hidden id="error" class="alert alert-danger" role="alert">
+          Что-то пошло не так. Соообщение не было отправлено.
+          Попробуйте еще раз.
+        </div>
+
+        <label for="name">
+          <span>Name</span>
+          <input name="name" id="name" type="text" placeholder="Input your name" required>
+        </label>
+        <label for="email">
+          <span>Email</span>
+          <input name="email" id="email" type="email" placeholder="Input your name" required>
+        </label>
+        <div class="form-contact__inner">
+
+          <label for="message">
+            <span>Speciale Request</span>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Input your special request"
+              required></textarea>
+          </label>
+          <button class="form-contact__btn btn btn-reset" type="submit" name="submit">Send</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+  <div class="container">
+    <div id="map" style="width: 100%; height: 547px"></div>
+
+  </div>
+</section>
