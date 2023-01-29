@@ -110,7 +110,7 @@
   transition: filter 0.3s;
 }
 
-.reviews-swiper__prev {
+.reviews-swiper-prev {
   background-image: url("../../images/icons/prev.svg");
   filter: invert(16%) sepia(15%) saturate(871%) hue-rotate(356deg)
     brightness(86%) contrast(91%);
@@ -119,7 +119,7 @@
   }
 }
 
-.reviews-swiper__next {
+.reviews-swiper-next {
   right: 13px;
   background-image: url("../../images/icons/next.svg");
   @include r(1024) {
