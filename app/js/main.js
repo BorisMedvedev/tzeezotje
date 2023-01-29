@@ -60,8 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const swiper2 = new Swiper(".reviews-swiper", {
     navigation: {
-      nextEl: ".reviews-swiper__next",
-      prevEl: ".reviews-swiper__prev",
+      nextEl: ".reviews-swiper-next",
+      prevEl: ".reviews-swiper-prev",
     },
     pagination: {
       el: ".swiper-pagination",
